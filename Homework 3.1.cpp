@@ -19,12 +19,12 @@ public:
           count++;
         }
     }
-    int get_element(int index) {
-        if (index <= 0 || index > size) {
-          throw std::exception("ERROR 2: Wrong index");
+    int get_element(unsigned int index) {
+        if (index > size) {
+          throw std::exception("ERROR 2: Bad index");
         }
         else {
-          return array[index - 1];
+          return array[index];
         }
     }
     ~smart_array() {
