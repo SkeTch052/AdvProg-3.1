@@ -20,7 +20,7 @@ public:
         }
     }
     int get_element(unsigned int index) {
-        if (index > size) {
+        if (index >= size) {
           throw std::exception("ERROR 2: Bad index");
         }
         else {
